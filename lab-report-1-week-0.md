@@ -1,0 +1,1 @@
+![Image](lab0.png)  
