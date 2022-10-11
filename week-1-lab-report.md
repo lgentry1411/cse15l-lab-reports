@@ -12,7 +12,7 @@ Unzip and Open
 
 It should look like this:
 
-![Image](/lab-1-images/1)
+![Image](/lab-1-images/1.png)
 
 
 
