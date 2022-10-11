@@ -12,7 +12,7 @@ Unzip and Open
 
 It should look like this:
 
-![Image](https://github.com/lgentry1411/cse15l-lab-reports/blob/main/lab-1-images/Screen%20Shot%202022-10-11%20at%203.37.29%20PM.png)
+![Image](/lab-1-images/1)
 
 
 
