@@ -26,7 +26,7 @@ Enter this command with your specific ID:
 
 Enter your password and you should see this.
 
-![Image](https://github.com/lgentry1411/cse15l-lab-reports/blob/main/lab-1-images/Screen%20Shot%202022-10-11%20at%203.38.22%20PM.png)
+![Image](/lab-1-images/2.png)
 
 
 You are now connected!!
@@ -55,7 +55,7 @@ And others
 
 And see what they do.
 
-![Image](https://github.com/lgentry1411/cse15l-lab-reports/blob/main/lab-1-images/Screen%20Shot%202022-10-11%20at%203.38.29%20PM.png)
+![Image](/lab-1-images/3.png)
 
 
 
@@ -95,7 +95,7 @@ In the terminal run
 
 Take not of the output, it should look like this:
 
-![Image](https://github.com/lgentry1411/cse15l-lab-reports/blob/main/lab-1-images/Screen%20Shot%202022-10-11%20at%203.57.57%20PM.png)
+![Image](/lab-1-images/4.png)
 
 Now let’s copy that file to the remote computer.
 
@@ -109,7 +109,7 @@ Enter your password.
 
 If it worked you will see this:
 
-![Image](https://github.com/lgentry1411/cse15l-lab-reports/blob/main/lab-1-images/Screen%20Shot%202022-10-11%20at%203.58.12%20PM.png)
+![Image](/lab-1-images/5.png)
 
 
 Now reconnect to the computer with 
@@ -120,7 +120,7 @@ Type the command **ls**.
 
 You should notice that the file WhereAmI.java is now there.
 
-![Image](https://github.com/lgentry1411/cse15l-lab-reports/blob/main/lab-1-images/Screen%20Shot%202022-10-11%20at%203.38.56%20PM.png)
+![Image](/lab-1-images/6.png)
 
 WhereAmI.class will be there too if you compile it.
 
@@ -132,7 +132,7 @@ Next run that file with
 
 The output should look like this:
 
-![Image](https://github.com/lgentry1411/cse15l-lab-reports/blob/main/lab-1-images/Screen%20Shot%202022-10-11%20at%203.39.01%20PM.png)
+![Image](/lab-1-images/7.png)
 
 
 ## Step 5:
@@ -149,7 +149,7 @@ Enter a “passphrase” (a shorter password)
 
 It should output a picture like this:
 
-![Image](https://github.com/lgentry1411/cse15l-lab-reports/blob/main/lab-1-images/Screen%20Shot%202022-10-11%20at%203.39.08%20PM.png)
+![Image](/lab-1-images/8.png)
 
 Next, reconnect to the server using 
 
@@ -171,7 +171,7 @@ Run this command to copy the key to the remote computer:
 
 Make sure to add your username on your Mac and your id.
 
-![Image](https://github.com/lgentry1411/cse15l-lab-reports/blob/main/lab-1-images/Screen%20Shot%202022-10-11%20at%203.39.15%20PM.png)
+![Image](/lab-1-images/9.png)
 
 If it works it will look like this.
 
@@ -183,7 +183,7 @@ Now try to connect again with
 
 It should now look like this:
 
-![Image](https://github.com/lgentry1411/cse15l-lab-reports/blob/main/lab-1-images/Screen%20Shot%202022-10-11%20at%203.39.20%20PM.png)
+![Image](/lab-1-images/10.png)
 
 
 Enter your passphrase and it should connect!
@@ -196,7 +196,7 @@ You can also write extra command lines at the end of an ssh connection line to r
 
 It should look like this:
 
-![Image](https://github.com/lgentry1411/cse15l-lab-reports/blob/main/lab-1-images/Screen%20Shot%202022-10-11%20at%203.39.26%20PM.png)
+![Image](/lab-1-images/11.png)
 
 
 You can also run multiple commands with semicolons. For example: 
