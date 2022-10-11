@@ -120,7 +120,7 @@ Type the command **ls**.
 
 You should notice that the file WhereAmI.java is now there.
 
-![Image](/lab-1-images/6.png)
+![Image](/lab-1-images/7.png)
 
 WhereAmI.class will be there too if you compile it.
 
@@ -132,7 +132,7 @@ Next run that file with
 
 The output should look like this:
 
-![Image](/lab-1-images/7.png)
+![Image](/lab-1-images/8.png)
 
 
 ## Step 5:
@@ -149,7 +149,7 @@ Enter a “passphrase” (a shorter password)
 
 It should output a picture like this:
 
-![Image](/lab-1-images/8.png)
+![Image](/lab-1-images/9.png)
 
 Next, reconnect to the server using 
 
@@ -171,7 +171,7 @@ Run this command to copy the key to the remote computer:
 
 Make sure to add your username on your Mac and your id.
 
-![Image](/lab-1-images/9.png)
+![Image](/lab-1-images/10.png)
 
 If it works it will look like this.
 
@@ -183,7 +183,7 @@ Now try to connect again with
 
 It should now look like this:
 
-![Image](/lab-1-images/10.png)
+![Image](/lab-1-images/11.png)
 
 
 Enter your passphrase and it should connect!
@@ -196,7 +196,7 @@ You can also write extra command lines at the end of an ssh connection line to r
 
 It should look like this:
 
-![Image](/lab-1-images/11.png)
+![Image](/lab-1-images/12.png)
 
 
 You can also run multiple commands with semicolons. For example: 
