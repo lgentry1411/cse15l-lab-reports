@@ -1,3 +1,5 @@
+# Part 1: Search Engine
+## Code:
 
     import java.io.IOException;
     import java.net.URI;
@@ -25,6 +27,7 @@
                     }
                 }
                 if (url.getPath().contains("/search")) {
+                    searched.clear();
                     String[] parameters = url.getQuery().split("=");
                     if (parameters[0].equals("s")) {
                         for (int i = 0; i < strings.size(); i++) {
@@ -80,6 +83,8 @@ fires. After it does, it again splits the query at the equal sign. Then, it loop
 the string we passed into the search. If it does, then that string is added to another arraylist searched. After the loop concludes, the searched arraylist is outputted to the screen.
 
 In this case, we searched for strings with the substring a, so it outputted apple and banana.
+ 
+
     
     
     
