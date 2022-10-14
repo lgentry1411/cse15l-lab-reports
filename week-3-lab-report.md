@@ -74,7 +74,7 @@ fires, it gets the query and splits it at the equal sign. It then adds the secon
 
 After this I then add two more items, banana and coconut
 
-Here is screenshot 3:
+Here is screenshot 3
 
 ![Image](/lab-2-images/55.png)
 
@@ -83,14 +83,79 @@ fires. After it does, it again splits the query at the equal sign. Then, it loop
 the string we passed into the search. If it does, then that string is added to another arraylist searched. After the loop concludes, the searched arraylist is outputted to the screen.
 
 In this case, we searched for strings with the substring a, so it outputted apple and banana.
- 
-
     
     
+# PART 2
     
+## Bug 1
     
 
+In reversedInPlace() in ArrayExamples, there is a bug. 
 
+Failure inducing input:
+	
+    @Test 
+	public void testReverseInPlaceLong() {
+        int[] input1 = { 3, 4, 5 };
+        ArrayExamples.reverseInPlace(input1);
+        assertArrayEquals(new int[]{ 5, 4, 3 }, input1);
+	}
 
+This test breaks the code because input1 ends up being equal to [5, 4, 5].
+	
+Here is the fixed code:
+	
+    static void reverseInPlace(int[] arr) {
+		for(int i = 0; i < arr.length/2; i += 1) {
+			int temp = arr[i];
+			arr[i] = arr[arr.length - i - 1];
+			arr[arr.length - i - 1] = temp;
+		}
+	}
+										
+This bug causes the symptom because after placing the replacing the element in the first slot with the element in the last slot, that element that was in the first slot no longer exists. So, when you get to the second half of the array and try to replace the element in the last slot with the element in the first slot, that element in the first slot was already replaced, so the array just ends up being a mirror of the back half of the array.
+										
+										
+## Bug 2
+    
 
+In filter() in ListExamples, there is a bug. 
 
+Failure inducing input:
+	
+    @Test 
+	public void testFilter() {
+        ArrayList<String> input1 = new ArrayList<>();
+        input1.add("apple");
+        input1.add("banana");
+        input1.add("coconut");
+        StringChecker sc = new StringChecker(){ 
+            public boolean checkString(String s) {
+                return s.length() < 7;
+            }
+        };
+        ListExamples.filter(input1, sc);
+        ArrayList<String> output = new ArrayList<>();
+        output.add("apple");
+        output.add("banana");
+        assertArrayEquals(output.toArray(),  ListExamples.filter(input1, sc).toArray());
+	}
+
+This test breaks the code because ListExamples.filter(input1, sc).toArray() ends up being equal to [banana, apple] when it should be [apple, banana].
+	
+Here is the fixed code:
+	
+	static List<String> filter(List<String> list, StringChecker sc) {
+		List<String> result = new ArrayList<>();
+		for(String s: list) {
+			if(sc.checkString(s)) {
+				result.add(s);
+			}
+		}
+		return result;
+	}
+										
+This bug causes the symptom because when adding s to result, the line was first result.add(0, s). This would add elements to the beginning of result, so the list would be backwards. 
+										
+										
+									
