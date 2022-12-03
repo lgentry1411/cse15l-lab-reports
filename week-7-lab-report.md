@@ -7,26 +7,31 @@ task: Changing the name of the start parameter and its uses to base
 ![Image](/week-7-lab-report-images/1.png)
 
         /start<enter> 
+
 moves the cursor to the first instance of start
   
 ![Image](/week-7-lab-report-images/2.png)
 
         cgnbase<esc> 
+
 changes the next math in that pattern, start, to base
   
 ![Image](/week-7-lab-report-images/3.png)
 
         n 
+
 moves the cursor to the next instance of start
   
 ![Image](/week-7-lab-report-images/4.png)
 
         . 
+
 does the last command, so cgn base, so it changes the word, start, to base
   
 ![Image](/week-7-lab-report-images/5.png)
 
         wq<enter> 
+
 quits vim and saves
   
 # Part 2: 
